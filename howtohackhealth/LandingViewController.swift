@@ -10,27 +10,24 @@ import UIKit
 
 class LandingViewController: UIViewController {
 
+    @IBOutlet var buttons: [TileButton]!
+
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        buttons.forEach { (button: TileButton) -> () in
+            button.addTarget(self, action: "doSomething:", forControlEvents: .TouchUpInside)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func doSomething(button: TileButton) {
+        self.performSegueWithIdentifier("show", sender: button)
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        
         if let button = sender as? TileButton {
-            
             if let controller = segue.destinationViewController as? SolutionViewController {                
                 controller.model = Solution(mood: button.mood)
             }
         }
-        
     }
-
 }
 
