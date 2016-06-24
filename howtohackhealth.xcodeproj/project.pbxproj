@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDB2C1CA1D1D498B00D787CF /* TileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB2C1C91D1D498B00D787CF /* TileButton.swift */; };
 		CDEBA16D1D1D396900CB35FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBA16C1D1D396900CB35FC /* AppDelegate.swift */; };
 		CDEBA16F1D1D396900CB35FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBA16E1D1D396900CB35FC /* ViewController.swift */; };
 		CDEBA1721D1D396900CB35FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEBA1701D1D396900CB35FC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CDB2C1C91D1D498B00D787CF /* TileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileButton.swift; sourceTree = "<group>"; };
 		CDEBA1691D1D396900CB35FC /* howtohackhealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = howtohackhealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEBA16C1D1D396900CB35FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDEBA16E1D1D396900CB35FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				CDEBA1731D1D396900CB35FC /* Assets.xcassets */,
 				CDEBA1751D1D396900CB35FC /* LaunchScreen.storyboard */,
 				CDEBA1781D1D396900CB35FC /* Info.plist */,
+				CDB2C1C91D1D498B00D787CF /* TileButton.swift */,
 			);
 			path = howtohackhealth;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDB2C1CA1D1D498B00D787CF /* TileButton.swift in Sources */,
 				CDEBA16F1D1D396900CB35FC /* ViewController.swift in Sources */,
 				CDEBA16D1D1D396900CB35FC /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				CDEBA17D1D1D396900CB35FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
