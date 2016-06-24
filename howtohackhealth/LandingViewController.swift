@@ -25,7 +25,7 @@ class LandingViewController: UIViewController {
         
         if let button = sender as? TileButton {
             
-            if let controller = segue.destinationViewController as? SolutionViewController {
+            if let controller = segue.destinationViewController as? SolutionViewController {                
                 controller.model = Solution(mood: button.mood)
             }
         }

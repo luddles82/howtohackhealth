@@ -89,6 +89,9 @@
                                                 <exclude reference="kcG-Hr-WxH"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="Sxv-FG-vyn" kind="show" id="BeO-oA-yiL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -116,6 +119,9 @@
                                                 <exclude reference="DUC-06-SjB"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="Sxv-FG-vyn" kind="show" id="m3m-BL-Sbg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYC-13-fhm" customClass="TileButton" customModule="howtohackhealth" customModuleProvider="target">
                                         <rect key="frame" x="284" y="0.0" width="276" height="168"/>
@@ -136,6 +142,9 @@
                                                 <exclude reference="UqD-xw-f73"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="Sxv-FG-vyn" kind="show" id="Um7-rD-acR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -170,6 +179,9 @@
                                                 <exclude reference="raY-ID-F5I"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="Sxv-FG-vyn" kind="show" id="Kbc-rW-48T"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9G-rz-L0c" customClass="TileButton" customModule="howtohackhealth" customModuleProvider="target">
                                         <rect key="frame" x="284" y="0.0" width="276" height="168"/>
@@ -190,6 +202,9 @@
                                                 <exclude reference="sPN-MY-jeJ"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="Sxv-FG-vyn" kind="show" id="jqk-ql-9Is"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -229,7 +244,7 @@
         <!--Solution View Controller-->
         <scene sceneID="qWS-0m-w3G">
             <objects>
-                <viewController id="Sxv-FG-vyn" customClass="SolutionViewController" customModule="howtohackhealth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Sxv-FG-vyn" customClass="SolutionViewController" customModule="howtohackhealth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7sq-ME-vhF"/>
                         <viewControllerLayoutGuide type="bottom" id="FPp-lf-WYg"/>
@@ -244,18 +259,82 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7xp-aX-U1t">
+                                <rect key="frame" x="20" y="80" width="561" height="504"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikx-wc-dkf">
+                                        <rect key="frame" x="0.0" y="0.0" width="561" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="CWT-8w-twC"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTm-Cq-jgl">
+                                        <rect key="frame" x="0.0" y="136" width="561" height="306"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu. " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXS-0q-IOO">
+                                        <rect key="frame" x="0.0" y="450" width="561" height="54"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="Esj-sL-6yh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Georgia-BoldItalic" family="Georgia" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kTm-Cq-jgl" firstAttribute="leading" secondItem="7xp-aX-U1t" secondAttribute="leading" id="5yF-d1-On6"/>
+                                    <constraint firstItem="ikx-wc-dkf" firstAttribute="leading" secondItem="kTm-Cq-jgl" secondAttribute="leading" id="BNZ-nU-mCw"/>
+                                    <constraint firstItem="ikx-wc-dkf" firstAttribute="leading" secondItem="7xp-aX-U1t" secondAttribute="leading" constant="8" id="DOt-4K-4uK"/>
+                                    <constraint firstAttribute="bottom" secondItem="vXS-0q-IOO" secondAttribute="bottom" id="DXx-KP-tyn"/>
+                                    <constraint firstItem="ikx-wc-dkf" firstAttribute="top" secondItem="7xp-aX-U1t" secondAttribute="top" constant="8" id="O3V-ZQ-S5s"/>
+                                    <constraint firstItem="vXS-0q-IOO" firstAttribute="leading" secondItem="7xp-aX-U1t" secondAttribute="leading" id="Sdt-Nd-nwo"/>
+                                    <constraint firstAttribute="trailing" secondItem="vXS-0q-IOO" secondAttribute="trailing" id="VhI-Qc-Ctw"/>
+                                    <constraint firstAttribute="trailing" secondItem="ikx-wc-dkf" secondAttribute="trailing" constant="8" id="dOv-tb-ebN"/>
+                                    <constraint firstItem="ikx-wc-dkf" firstAttribute="top" secondItem="7xp-aX-U1t" secondAttribute="top" constant="8" id="eqs-Q2-JqT"/>
+                                    <constraint firstAttribute="trailing" secondItem="kTm-Cq-jgl" secondAttribute="trailing" id="y4k-J5-4az"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="DOt-4K-4uK"/>
+                                        <exclude reference="O3V-ZQ-S5s"/>
+                                        <exclude reference="dOv-tb-ebN"/>
+                                        <exclude reference="eqs-Q2-JqT"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="leadingMargin" secondItem="7xp-aX-U1t" secondAttribute="leading" id="0ON-01-7eH"/>
+                            <constraint firstItem="7xp-aX-U1t" firstAttribute="top" secondItem="7sq-ME-vhF" secondAttribute="bottom" constant="16" id="0xi-c2-cnO"/>
+                            <constraint firstItem="FPp-lf-WYg" firstAttribute="top" secondItem="7xp-aX-U1t" secondAttribute="bottom" constant="16" id="3Nv-H5-Mp0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7xp-aX-U1t" secondAttribute="trailing" constant="-1" id="QW3-wn-IMK"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="fS1-ud-A0h"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="buttonView" destination="kTm-Cq-jgl" id="6wX-US-yMc"/>
+                        <outlet property="desc" destination="ikx-wc-dkf" id="xqm-2c-OJ1"/>
+                        <outlet property="quote" destination="vXS-0q-IOO" id="hHG-JZ-heX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qwe-hg-UIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1341" y="1037"/>
+            <point key="canvasLocation" x="1401" y="1032"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jqk-ql-9Is"/>
+    </inferredMetricsTieBreakers>
 </document>

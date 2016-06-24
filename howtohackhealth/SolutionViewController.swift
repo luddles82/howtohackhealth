@@ -10,15 +10,21 @@ import UIKit
 
 class SolutionViewController : UIViewController {
     
+
+    @IBOutlet var desc: UITextView!
+    @IBOutlet var buttonView: UIView!
+    @IBOutlet var quote: UITextView!
+    
     var model:Solution?
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
         if let model = model {
             self.title = model.title
+            self.desc.text = model.description
+            self.quote.text = model.quote
             
         }
-
     }
-    
 }
