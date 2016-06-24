@@ -32,5 +32,6 @@ class TileButton : UIButton {
             self.backgroundColor = bgColor
         }
     }
+    @IBInspectable var mood:String = ""
 
 }

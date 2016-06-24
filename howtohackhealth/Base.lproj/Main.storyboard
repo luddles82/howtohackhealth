@@ -22,10 +22,10 @@
             </objects>
             <point key="canvasLocation" x="-49" y="1032"/>
         </scene>
-        <!--View Controller-->
+        <!--Landing View Controller-->
         <scene sceneID="670-AB-j0t">
             <objects>
-                <viewController id="bqK-vw-x07" sceneMemberID="viewController">
+                <viewController id="bqK-vw-x07" customClass="LandingViewController" customModule="howtohackhealth" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8rE-DU-TD1"/>
                         <viewControllerLayoutGuide type="bottom" id="RCT-kb-qBq"/>
@@ -43,7 +43,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="Qep-vP-9bc"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Anxiety">
                                             <color key="titleShadowColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="deviceRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -59,23 +59,30 @@
                                             <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
                                                 <color key="value" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.61346600506756754" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="mood" value="anxiety"/>
                                         </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="Qep-vP-9bc"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="Sxv-FG-vyn" kind="show" identifier="anxious" id="b1N-uu-7Wu"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojS-Db-b2t">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ojS-Db-b2t" customClass="TileButton" customModule="howtohackhealth" customModuleProvider="target">
                                         <rect key="frame" x="284" y="0.0" width="276" height="168"/>
                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="F0O-Kx-x4J"/>
                                             <constraint firstAttribute="width" constant="160" id="kcG-Hr-WxH"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Sleepy">
                                             <color key="titleShadowColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="deviceRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="mood" value="sleepy"/>
+                                        </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="F0O-Kx-x4J"/>
@@ -92,31 +99,37 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wpc-Mz-wpu">
                                 <rect key="frame" x="20" y="248" width="560" height="168"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9K-DH-KE4">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9K-DH-KE4" customClass="TileButton" customModule="howtohackhealth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="276" height="168"/>
                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="DUC-06-SjB"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Angry">
                                             <color key="titleShadowColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="deviceRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="mood" value="angry"/>
+                                        </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="DUC-06-SjB"/>
                                             </mask>
                                         </variation>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYC-13-fhm">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYC-13-fhm" customClass="TileButton" customModule="howtohackhealth" customModuleProvider="target">
                                         <rect key="frame" x="284" y="0.0" width="276" height="168"/>
                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="90G-b3-ZOG"/>
                                             <constraint firstAttribute="width" constant="160" id="UqD-xw-f73"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Bashful">
                                             <color key="titleShadowColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="deviceRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="mood" value="bashful"/>
+                                        </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="90G-b3-ZOG"/>
@@ -140,31 +153,37 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xDJ-Kj-5uN">
                                 <rect key="frame" x="20" y="424" width="560" height="168"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rG5-jw-wbY">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rG5-jw-wbY" customClass="TileButton" customModule="howtohackhealth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="276" height="168"/>
                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="raY-ID-F5I"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Doc">
                                             <color key="titleShadowColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="deviceRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="mood" value="doc"/>
+                                        </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="raY-ID-F5I"/>
                                             </mask>
                                         </variation>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9G-rz-L0c">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9G-rz-L0c" customClass="TileButton" customModule="howtohackhealth" customModuleProvider="target">
                                         <rect key="frame" x="284" y="0.0" width="276" height="168"/>
                                         <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="160" id="GfE-KQ-sbf"/>
                                             <constraint firstAttribute="height" constant="200" id="sPN-MY-jeJ"/>
                                         </constraints>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Sneezy">
                                             <color key="titleShadowColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="deviceRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="mood" value="sneezy"/>
+                                        </userDefinedRuntimeAttributes>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="GfE-KQ-sbf"/>
@@ -206,6 +225,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Leu-kh-Pm7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="665" y="1032"/>
+        </scene>
+        <!--Solution View Controller-->
+        <scene sceneID="qWS-0m-w3G">
+            <objects>
+                <viewController id="Sxv-FG-vyn" customClass="SolutionViewController" customModule="howtohackhealth" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7sq-ME-vhF"/>
+                        <viewControllerLayoutGuide type="bottom" id="FPp-lf-WYg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dn7-dK-f5Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fS1-ud-A0h">
+                                <rect key="frame" x="279" y="89" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fS1-ud-A0h"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qwe-hg-UIx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1341" y="1037"/>
         </scene>
     </scenes>
 </document>

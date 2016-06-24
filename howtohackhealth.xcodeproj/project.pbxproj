@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CDB2C1CA1D1D498B00D787CF /* TileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB2C1C91D1D498B00D787CF /* TileButton.swift */; };
+		CDB2C1CC1D1D61D700D787CF /* SolutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB2C1CB1D1D61D700D787CF /* SolutionViewController.swift */; };
+		CDB2C1CE1D1D645E00D787CF /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB2C1CD1D1D645E00D787CF /* Solution.swift */; };
 		CDEBA16D1D1D396900CB35FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBA16C1D1D396900CB35FC /* AppDelegate.swift */; };
-		CDEBA16F1D1D396900CB35FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBA16E1D1D396900CB35FC /* ViewController.swift */; };
+		CDEBA16F1D1D396900CB35FC /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEBA16E1D1D396900CB35FC /* LandingViewController.swift */; };
 		CDEBA1721D1D396900CB35FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEBA1701D1D396900CB35FC /* Main.storyboard */; };
 		CDEBA1741D1D396900CB35FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEBA1731D1D396900CB35FC /* Assets.xcassets */; };
 		CDEBA1771D1D396900CB35FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEBA1751D1D396900CB35FC /* LaunchScreen.storyboard */; };
@@ -17,9 +19,11 @@
 
 /* Begin PBXFileReference section */
 		CDB2C1C91D1D498B00D787CF /* TileButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileButton.swift; sourceTree = "<group>"; };
+		CDB2C1CB1D1D61D700D787CF /* SolutionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolutionViewController.swift; sourceTree = "<group>"; };
+		CDB2C1CD1D1D645E00D787CF /* Solution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 		CDEBA1691D1D396900CB35FC /* howtohackhealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = howtohackhealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEBA16C1D1D396900CB35FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDEBA16E1D1D396900CB35FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDEBA16E1D1D396900CB35FC /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		CDEBA1711D1D396900CB35FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDEBA1731D1D396900CB35FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDEBA1761D1D396900CB35FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				CDEBA16C1D1D396900CB35FC /* AppDelegate.swift */,
-				CDEBA16E1D1D396900CB35FC /* ViewController.swift */,
+				CDEBA16E1D1D396900CB35FC /* LandingViewController.swift */,
 				CDEBA1701D1D396900CB35FC /* Main.storyboard */,
 				CDEBA1731D1D396900CB35FC /* Assets.xcassets */,
 				CDEBA1751D1D396900CB35FC /* LaunchScreen.storyboard */,
 				CDEBA1781D1D396900CB35FC /* Info.plist */,
 				CDB2C1C91D1D498B00D787CF /* TileButton.swift */,
+				CDB2C1CB1D1D61D700D787CF /* SolutionViewController.swift */,
+				CDB2C1CD1D1D645E00D787CF /* Solution.swift */,
 			);
 			path = howtohackhealth;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDB2C1CA1D1D498B00D787CF /* TileButton.swift in Sources */,
-				CDEBA16F1D1D396900CB35FC /* ViewController.swift in Sources */,
+				CDEBA16F1D1D396900CB35FC /* LandingViewController.swift in Sources */,
 				CDEBA16D1D1D396900CB35FC /* AppDelegate.swift in Sources */,
+				CDB2C1CC1D1D61D700D787CF /* SolutionViewController.swift in Sources */,
+				CDB2C1CE1D1D645E00D787CF /* Solution.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LandingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        if let button = sender as? TileButton {
+            
+            if let controller = segue.destinationViewController as? SolutionViewController {
+                controller.model = Solution(mood: button.mood)
+            }
+        }
+        
+    }
 
 }
 
