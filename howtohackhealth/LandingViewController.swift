@@ -15,11 +15,11 @@ class LandingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buttons.forEach { (button: TileButton) -> () in
-            button.addTarget(self, action: "doSomething:", forControlEvents: .TouchUpInside)
+            button.addTarget(self, action: #selector(showNextScreen(_:)), forControlEvents: .TouchUpInside)
         }
     }
 
-    func doSomething(button: TileButton) {
+    func showNextScreen(button: TileButton) {
         self.performSegueWithIdentifier("show", sender: button)
     }
 
