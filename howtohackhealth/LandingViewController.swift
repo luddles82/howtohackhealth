@@ -13,6 +13,7 @@ class LandingViewController: UIViewController {
     @IBOutlet var buttons: [TileButton]!
 
     override func viewDidLoad() {
+        super.viewDidLoad()
         buttons.forEach { (button: TileButton) -> () in
             button.addTarget(self, action: "doSomething:", forControlEvents: .TouchUpInside)
         }
